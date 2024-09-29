@@ -1,0 +1,173 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212; /* Deep Dark Background */
+}
+
+.file-manager {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1e1e2f; /* Slightly Lighter Dark Background */
+  min-height: 100vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: #f0f0f0; /* Light Gray Text for Contrast */
+}
+
+h1 {
+  text-align: center;
+  color: #00adb5; /* Teal Accent for Modern Look */
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.file-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.file-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #222831; /* Dark Input Background */
+  color: #f0f0f0; /* Light Text */
+}
+
+.file-input input::placeholder {
+  color: #a9b1c0; /* Softer Placeholder Color */
+  opacity: 0.7;
+}
+
+.file-input button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #00adb5; /* Teal Button */
+  color: #121212; /* Dark Text for Contrast */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-input button:hover {
+  background-color: #007f8e; /* Darker Teal on Hover */
+}
+
+.file-list {
+  background-color: #222831; /* Consistent Dark Background */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.file-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 0.5fr;
+  padding: 15px;
+  background-color: #1a1a2e; /* Slightly Lighter Header */
+  font-weight: bold;
+  color: #00adb5; /* Teal Text */
+  border-bottom: 2px solid #00adb5; /* Teal Border for Separation */
+}
+
+.file-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 0.5fr;
+  padding: 15px;
+  border-bottom: 1px solid #1a1a2e;
+  transition: background-color 0.3s ease;
+  color: #f0f0f0;
+}
+
+.file-item:hover {
+  background-color: #2c2c3e; /* Slightly Lighter on Hover */
+}
+
+.file-item span {
+  display: flex;
+  align-items: center;
+}
+
+.file-item .upload-date {
+  color: #a9b1c0; /* Softer Text for Dates */
+}
+
+.file-item button {
+  background-color: #ff5722; /* Vibrant Orange Button for Delete */
+  color: #121212; /* Dark Text for Contrast */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-item button:hover {
+  background-color: #e64a19; /* Darker Orange on Hover */
+}
+
+.file-item.urgent {
+  background-color: #ff0000b5; /* Bright Orange for Urgent Tasks */
+  color: #121212; /* Dark Text for Readability */
+}
+
+.file-item.past-due {
+  background-color: #000000; /* Deep Red for Past Due */
+  color: #ffffff41; /* White Text for Contrast */
+}
+
+.alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-modal {
+  background-color: #1e1e2f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  color: #f0f0f0;
+}
+
+.alert-modal h2 {
+  color: #00adb5;
+  margin-top: 0;
+}
+
+.alert-modal ul {
+  padding-left: 20px;
+}
+
+.alert-modal button {
+  background-color: #00adb5;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.alert-modal button:hover {
+  background-color: #007f8e;
+}

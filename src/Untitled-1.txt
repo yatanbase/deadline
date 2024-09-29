@@ -1,0 +1,6 @@
+  apiKey: "AIzaSyA8bcz1njXntCAZIgiT2srWkAij6z9dMUs",
+  authDomain: "taskmanager-c10ce.firebaseapp.com",
+  projectId: "taskmanager-c10ce",
+  storageBucket: "taskmanager-c10ce.appspot.com",
+  messagingSenderId: "71489688647",
+  appId: "1:71489688647:web:e1cd9b4375163d058dcd62"
